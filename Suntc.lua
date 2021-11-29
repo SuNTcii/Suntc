@@ -135,8 +135,9 @@ end
 function Can_or_NotCan(user_id,chat_id)
 if tonumber(user_id) == tonumber(1767952030) then  
 var = true 
-elseif tonumber(user_id) == tonumber(452924443) then
-var = true  
+function Can_or_NotCan(user_id,chat_id)
+if tonumber(user_id) == tonumber(452924443) then  
+var = true 
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
 elseif tonumber(user_id) == tonumber(bot_id) then
@@ -165,10 +166,11 @@ end
 return var
 end 
 function Rutba(user_id,chat_id)
+if tonumber(user_id) == tonumber(1767952030) then  
+var = 'مبرمج السورس'
+function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(452924443) then  
 var = 'مبرمج السورس'
-elseif tonumber(user_id) == tonumber(1767952030) then  
-var = "مطور السورس"   
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
 elseif database:sismember(bot_id.."DEV:Sudo:T", user_id) then 
